@@ -17,7 +17,7 @@ OBJ			=	$(SRC:src/%.cpp=bin/%.o)
 all: $(NAME)
 
 bin:
-	@mkdir -p bin/Fixed
+	@mkdir -p bin
 
 bin/%.o: src/%.cpp $(HEADER) | bin
 	$(CXX) $(CXXFLAGS) $(INCLUDES) -c $< -o $@

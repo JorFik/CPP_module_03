@@ -6,7 +6,7 @@
 /*   By: JFikents <Jfikents@student.42Heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/26 17:38:08 by JFikents          #+#    #+#             */
-/*   Updated: 2024/08/26 19:32:08 by JFikents         ###   ########.fr       */
+/*   Updated: 2024/08/28 13:23:22 by JFikents         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ class	FragTrap: public ClapTrap
 		FragTrap(std::string name);
 		FragTrap(const FragTrap &other);
 		~FragTrap();
+		FragTrap	&operator=(const FragTrap &other) = default;
 
 		void	highFivesGuys(void);
 };

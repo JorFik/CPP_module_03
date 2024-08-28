@@ -6,7 +6,7 @@
 /*   By: JFikents <Jfikents@student.42Heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/25 17:29:13 by JFikents          #+#    #+#             */
-/*   Updated: 2024/08/26 17:32:11 by JFikents         ###   ########.fr       */
+/*   Updated: 2024/08/28 13:40:46 by JFikents         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,10 @@ ClapTrap::ClapTrap(std::string name): ClapTrap()
 	std::cout << this->_formatName() << " is created." << std::endl;
 }
 
-ClapTrap::ClapTrap(const ClapTrap &other)
+ClapTrap::ClapTrap(const ClapTrap &other): ClapTrap()
 {
-	*this = other;
 	std::cout << this->_formatName() << " is created." << std::endl;
+	*this = other;
 }
 
 ClapTrap::~ClapTrap()

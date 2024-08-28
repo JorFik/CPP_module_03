@@ -6,7 +6,7 @@
 /*   By: JFikents <Jfikents@student.42Heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/26 14:32:03 by JFikents          #+#    #+#             */
-/*   Updated: 2024/08/26 17:32:35 by JFikents         ###   ########.fr       */
+/*   Updated: 2024/08/28 13:23:12 by JFikents         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ class	ScavTrap : public ClapTrap
 		ScavTrap(std::string name);
 		ScavTrap(const ScavTrap &other);
 		~ScavTrap();
+		ScavTrap	&operator=(const ScavTrap &other) = default;
 
 		void	attack(std::string const &target) override;
 		void	guardGate(void);

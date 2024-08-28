@@ -6,7 +6,7 @@
 /*   By: JFikents <Jfikents@student.42Heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/25 18:28:19 by JFikents          #+#    #+#             */
-/*   Updated: 2024/08/26 19:41:23 by JFikents         ###   ########.fr       */
+/*   Updated: 2024/08/28 13:27:21 by JFikents         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,13 @@ int	main(void)
 	ScavTrap	scavtrap("Scavy");
 	std::cout << std::endl;
 	FragTrap	fragtrap("Fraggy");
+	std::cout << std::endl;
 
+	FragTrap	fragtrap2(fragtrap);
+	std::cout << std::endl;
+	fragtrap2 = FragTrap("Fraggy Jr");
+	std::cout << std::endl;
+	fragtrap2.highFivesGuys();
 	std::cout << std::endl;
 	for (int i = 0; i < 25; i++)
 	{

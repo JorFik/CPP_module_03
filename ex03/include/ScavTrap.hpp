@@ -6,7 +6,7 @@
 /*   By: JFikents <Jfikents@student.42Heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/26 14:32:03 by JFikents          #+#    #+#             */
-/*   Updated: 2024/08/26 20:54:06 by JFikents         ###   ########.fr       */
+/*   Updated: 2024/08/28 13:47:58 by JFikents         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ class	ScavTrap : virtual public ClapTrap
 		ScavTrap(std::string name);
 		ScavTrap(const ScavTrap &other);
 		~ScavTrap();
+		ScavTrap &operator =(const ScavTrap &other) = default;
 
 		void	attack(std::string const &target) override;
 		void	guardGate(void);
